@@ -18,6 +18,7 @@
 
 body {
     background-color: var(--principal);
+    width: auto;
 }
 .barra {
     display: flex;
@@ -33,7 +34,7 @@ body {
 /**Logos**/
 .contenedor-logo {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     position: absolute;
     top: 0;
     left: 0;
@@ -43,16 +44,25 @@ body {
 /**Columnas**/
 .columna1 {
     height: 180px;
+    display:flex;
 }
 .columna2 {
     height: 180px;
+    display: flex;
+    justify-content: right;
+    padding-right: 60px;
+    margin: 0;
+}
+.logos {
+    display: grid;
+    grid-template-rows: auto auto auto; 
+    justify-content: center;
 }
 /**Barra de Busqueda**/
 .barra_busqueda {
-    position: absolute;
-    left: 18%;
-    bottom: 10%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    margin-left: 10px;
+    margin-top: 80px;
 }
 .barra_busqueda input{
     padding: 9px 10px 9px 32px;
@@ -65,17 +75,6 @@ body {
 }
 .barra_busqueda input:hover {
     background-color: var(--gris_claro);
-}
-.columna3 {
-    height: 180px;
-}
-.columna4 {
-    height: 180px;
-    display: grid;
-    grid-template-rows: auto auto auto; 
-    justify-items: center;
-    padding: 0px;
-    margin: 0;
 }
 /**Imagenes Logos**/
 .logo_pea img {
@@ -112,6 +111,8 @@ body {
 }
 .logo_untdf {
     grid-row: 1;
+    display: flex;
+    justify-content: center;
 }
 .fila_3 {
     width: 100%;
@@ -169,38 +170,6 @@ ul.menu li a {
     list-style-type: none;
     width: 100%;
 }
-
-
-/**Main**/
-main {
-    display:inline-flex;
-}
-.noticia {
-    margin: 30px 60px 0px 40px;
-    width: 1080px;
-    background-color: var(--secundario);
-    height: 500px;
-}
-.noticia img {
-    height: auto;
-    width: 1080px;
-}
-.calendario {
-    height: 400px;
-    width: 480px;
-    background-color: var(--blanco);
-    margin: 30px 60px 0px 0px;
-}
-.institutos {
-    display: grid;
-    margin: 30px 0px 0px 0px;
-}
-.institutos img {
-    height:100px;
-    width: auto;
-    margin: 0px 0px 30px 0px;
-}
-
 /**Footer**/
 footer {
     display: flex;
