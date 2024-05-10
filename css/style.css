@@ -1,0 +1,223 @@
+:root {
+    --principal: rgb(0, 29, 67);
+    --secundario: rgb(124, 169, 202);
+    --navegacion: rgb(33, 79, 118);
+    --footer: rgb(124, 169, 202);
+    --negro: #000;
+    --blanco: #fff;
+    --gris_clarito: #ECECEC;
+    --fuente_principal: 'Hanken Grotesk', sans-serif;
+    --fuente_secundaria: 'Questrial', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--fuente_principal);
+}
+
+body {
+    background-color: var(--principal);
+}
+.barra {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('/imagenes/fondo_barra2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    position: relative;
+}
+/**Logos**/
+.contenedor-logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+/**Columnas**/
+.columna1 {
+    height: 180px;
+}
+.columna2 {
+    height: 180px;
+}
+/**Barra de Busqueda**/
+.barra_busqueda {
+    position: absolute;
+    left: 18%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+.barra_busqueda input{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 3px solid var(--negro);
+    background: var(--blanco) url("/imagenes/search-icon.png") no-repeat 9px center;
+    width: 250px;
+}
+.barra_busqueda input:hover {
+    background-color: var(--gris_claro);
+}
+.columna3 {
+    height: 180px;
+}
+.columna4 {
+    height: 180px;
+    display: grid;
+    grid-template-rows: auto auto auto; 
+    justify-items: center;
+    padding: 0px;
+    margin: 0;
+}
+/**Imagenes Logos**/
+.logo_pea img {
+    height: 150px;
+    width: auto;
+}
+.logo_untdf img {
+    height: 60px;
+    width: auto;
+}
+
+.logo_ig img {
+    height: 40px;
+    width: auto;
+}
+
+.logo_mail img {
+    height: 40px;
+    width: auto;
+}
+
+.logo_moodle img {
+    height: 40px;
+    width: auto;
+}
+
+.logo_siuguarani img {
+    height: 60px;
+    width: auto;
+}
+/**Posicionando Logos**/
+.logo_pea {
+    padding-left: 20px;
+}
+.logo_untdf {
+    grid-row: 1;
+}
+.fila_3 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    grid-row: 3;
+}
+.logo_siuguarani {
+    grid-row: 2;
+}
+
+/**Navegacion**/
+nav {
+    background-color: var(--navegacion);
+    justify-content: start;
+    align-items: center;
+    height: 70px;
+    font-size: 20px;
+    width: 100%;
+    z-index: 0;
+
+}
+ul.menu {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+.menu li {
+    position: relative;
+    width: 100%;
+}
+.menu li:hover > ul {
+    display: block;
+}
+ul.menu li a {
+    border: 2px solid var(--blanco);
+    height: 70px;
+    align-content: center;
+    display: block;
+    background-color: var(--navegacion);
+    font-family: var(--fuente_secundaria);
+    font-size: 25px;
+    text-align: center;
+    color: var(--gris_clarito);
+    text-decoration: none;
+    padding: 20px 20px;
+}
+.menu li a:hover {
+    background-color: var(--principal);
+}
+.submenu {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    width: 100%;
+}
+
+
+/**Main**/
+main {
+    display:inline-flex;
+}
+.noticia {
+    margin: 30px 60px 0px 40px;
+    width: 1080px;
+    background-color: var(--secundario);
+    height: 500px;
+}
+.noticia img {
+    height: auto;
+    width: 1080px;
+}
+.calendario {
+    height: 400px;
+    width: 480px;
+    background-color: var(--blanco);
+    margin: 30px 60px 0px 0px;
+}
+.institutos {
+    display: grid;
+    margin: 30px 0px 0px 0px;
+}
+.institutos img {
+    height:100px;
+    width: auto;
+    margin: 0px 0px 30px 0px;
+}
+
+/**Footer**/
+footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
+    height: 160px;
+    background-color: var(--footer);
+    font-family: var(--fuente_secundaria);
+    font-size: 20px;
+    color: var(--principal);
+}
+.logo_untdf-footer {
+    margin-left: 20px;
+}
+footer img {
+    height: 100px;
+    width: auto;
+}

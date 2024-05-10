@@ -1,0 +1,69 @@
+:root {
+    --principal: rgb(0, 29, 67);
+    --secundario: rgb(124, 169, 202);
+    --navegacion: rgb(33, 79, 118);
+    --footer: rgb(124, 169, 202);
+    --negro: #000;
+    --blanco: #fff;
+    --gris_claro: #ECECEC;
+    --fuente_principal: 'Hanken Grotesk', sans-serif;
+    --fuente_secundaria: 'Questrial', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--fuente_principal);
+}
+
+body {
+    background-color: var(--principal);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/**Main**/
+main {
+    display: flex;
+}
+.imagen_clase {
+    margin: 70px 30px 40px 330px;
+}
+.imagen_clase img {
+    height: 500px;
+    width: 320px;
+    border-radius: 5%;
+}
+.descripcion_clase {
+    margin: 70px 0px 40px 60px;
+    color: var(--gris_claro);
+    font-family: var(--fuente_principal);
+    font-size: 30px;
+}
+.descripcion_clase p {
+    padding: 5px;
+}
+.profe {
+    margin-bottom: 70px;
+}
+.boton {
+    padding: 50px;
+    height: auto;
+    width: auto;
+}
+.boton button {
+    border: 0;
+    text-decoration: none;
+    background-color: var(--navegacion);
+    margin-top: 60px;
+    height: 110px;
+    width: 190px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-family: var(--fuente_principal);
+    color: var(--gris_claro);
+}
+.boton button:hover {
+    cursor: pointer;
+}

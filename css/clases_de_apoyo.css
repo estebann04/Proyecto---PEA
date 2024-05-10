@@ -1,0 +1,93 @@
+:root {
+    --principal: rgb(0, 29, 67);
+    --secundario: rgb(124, 169, 202);
+    --navegacion: rgb(33, 79, 118);
+    --footer: rgb(124, 169, 202);
+    --negro: #000;
+    --blanco: #fff;
+    --gris_claro: #ECECEC;
+    --fuente_principal: 'Hanken Grotesk', sans-serif;
+    --fuente_secundaria: 'Questrial', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--fuente_principal);
+}
+
+body {
+    background-color: var(--principal);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/**Main**/
+main {
+    display: flex;
+    justify-content: center;
+}
+.clases {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+.clases h1 {
+    grid-column:span 2 / 4;
+    color: var(--gris_claro);
+    font-family: var(--fuente_secundaria);
+    font-size: 42px;
+    margin: 40px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.clases a {
+    background-color: var(--navegacion) ;
+    color: var(--gris_claro);
+    font-family: var(--fuente_principal);
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px 20px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    width: 300px;
+    border-radius: 50%;
+}
+.clase-quimica {
+    grid-row: 2;
+    grid-column: 1;
+}
+.clase-int_economia {
+    grid-row: 2;
+    grid-column: 2;
+}
+.clase-algebra {
+    grid-row: 2;
+    grid-column: 3;
+}
+.clase-matematica_icpa {
+    grid-row: 2;
+    grid-column: 4;
+}
+.clase-matematica_contador {
+    grid-row: 3;
+    grid-column: 1;
+}
+.clase-contabilidad {
+    grid-row: 3;
+    grid-column: 2;
+}
+.clase-geografia_fisica {
+    grid-row: 3;
+    grid-column: 3;
+}
+.clase-elementos_informatica {
+    grid-row: 3;
+    grid-column: 4;
+}
