@@ -133,12 +133,11 @@ nav {
     font-size: 20px;
     width: 100%;
     z-index: 0;
-
 }
 ul.menu {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 0.7fr);
     align-items: center;
 }
 .menu li {
@@ -148,6 +147,7 @@ ul.menu {
 .menu li:hover > ul {
     display: block;
 }
+
 ul.menu li a {
     border: 2px solid var(--blanco);
     height: 70px;
@@ -155,7 +155,7 @@ ul.menu li a {
     display: block;
     background-color: var(--navegacion);
     font-family: var(--fuente_secundaria);
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     color: var(--gris_clarito);
     text-decoration: none;
