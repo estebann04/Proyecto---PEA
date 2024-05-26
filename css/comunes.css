@@ -9,6 +9,7 @@
     --fuente_principal: 'Hanken Grotesk', sans-serif;
     --fuente_secundaria: 'Questrial', sans-serif;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -18,127 +19,109 @@
 
 body {
     background-color: var(--principal);
-    width: auto;
-}
-.barra {
+    background-color: var(--navegacion);
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADER */   
+
+header {
     background-image: url('/imagenes/fondo_barra2.jpg');
     background-size: cover;
     background-position: center;
-    height: 250px;
-    width: 100%;
-    position: relative;
-}
-/**Logos**/
-.contenedor-logo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    position: absolute;
+    height: 200px;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     top: 0;
     left: 0;
     z-index: 1;
-    width: 100%;
 }
-/**Columnas**/
+
+/* Logo PEA y Busqueda*/
+
 .columna1 {
-    height: 180px;
     display:flex;
+    justify-content: left;
 }
+
+    .logo_pea img {
+        height: 150px;
+        width: auto;
+    }
+
+    .barra_busqueda {
+        position: relative;
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+
+    .barra_busqueda input{
+        padding: 9px 10px 9px 32px;
+        outline: none;
+        font-size: 18px;
+        border-radius: 25px;
+        border: 3px solid var(--negro);
+        background: var(--blanco) url("/imagenes/search-icon.png") no-repeat 9px center;
+        width: 250px;
+    }
+
+    .barra_busqueda input:hover {
+        background-color: var(--gris_claro);
+    }
+
+/*LOGOS UNTDF-SIU-REDES */
+/* La columna 2 se usa sólo para posicionar los iconos a la derecha*/
 .columna2 {
-    height: 180px;
     display: flex;
     justify-content: right;
-    padding-right: 60px;
-    margin: 0;
 }
+/*El div logos se usa para centrarlos y darles espacio*/
 .logos {
-    display: grid;
-    grid-template-rows: auto auto auto; 
-    justify-content: center;
-}
-/**Barra de Busqueda**/
-.barra_busqueda {
-    position: relative;
-    margin-left: 10px;
-    margin-top: 80px;
-}
-.barra_busqueda input{
-    padding: 9px 10px 9px 32px;
-    outline: none;
-    font-size: 18px;
-    border-radius: 25px;
-    border: 3px solid var(--negro);
-    background: var(--blanco) url("/imagenes/search-icon.png") no-repeat 9px center;
-    width: 250px;
-}
-.barra_busqueda input:hover {
-    background-color: var(--gris_claro);
-}
-/**Imagenes Logos**/
-.logo_pea img {
-    height: 150px;
-    width: auto;
-}
-.logo_untdf img {
-    height: 60px;
-    width: auto;
+    padding-right: 20px;
 }
 
-.logo_ig img {
-    height: 40px;
-    width: auto;
-}
+    /*Posicionamiento de Logos*/
 
-.logo_mail img {
-    height: 40px;
-    width: auto;
-}
+    .logo_untdf, .logo_siuguarani {
+        display: flex;
+        justify-content: center;
+    }
 
-.logo_moodle img {
-    height: 40px;
-    width: auto;
-}
+    .Redes {
+        display: flex;
+        justify-content: center;
+    }
 
-.logo_siuguarani img {
-    height: 60px;
-    width: auto;
-}
-/**Posicionando Logos**/
-.logo_pea {
-    padding-left: 20px;
-}
-.logo_untdf {
-    grid-row: 1;
-    display: flex;
-    justify-content: center;
-}
-.fila_3 {
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    grid-row: 3;
-}
-.logo_siuguarani {
-    grid-row: 2;
-}
+    /* Tamaño de Logos */
+    
+    .logo_untdf img, .logo_siuguarani img {
+        height: 60px;
+    }
 
-/**Navegacion**/
+    .Redes img {
+        height: 40px;
+    }
+
+/* NAV */
 nav {
     background-color: var(--navegacion);
-    justify-content: start;
-    align-items: center;
     height: 70px;
-    font-size: 20px;
     width: 100%;
-    z-index: 0;
+    max-width: 1200px;
+    font-size: 20px;
 }
 ul.menu {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(6, 0.7fr);
-    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
 }
 .menu li {
     position: relative;
@@ -170,13 +153,23 @@ ul.menu li a {
     list-style-type: none;
     width: 100%;
 }
-/**Footer**/
+
+/* MAIN */
+
+main {
+    background-color: var(--principal);
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* FOOTER */
+
 footer {
     display: flex;
     justify-content: start;
     align-items: center;
-    margin-top: 60px;
     width: 100%;
+    max-width: 1200px;
     height: 160px;
     background-color: var(--footer);
     font-family: var(--fuente_secundaria);

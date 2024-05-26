@@ -9,24 +9,15 @@
     --fuente_principal: 'Hanken Grotesk', sans-serif;
     --fuente_secundaria: 'Questrial', sans-serif;
 }
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: var(--fuente_principal);
-}
-
-body {
-    background-color: var(--principal);
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
 /**Main**/
 main {
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 1200px;
 }
+/* Selector de Clases*/
+
 .clases {
     display: grid;
     grid-template-columns:repeat(4, 1fr);
@@ -50,13 +41,13 @@ main {
     text-decoration: none;
     font-size: 30px;
     padding: 20px 20px;
-    margin: 50px;
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 200px;
-    width: 300px;
+    width: 250px;
     border-radius: 50%;
 }
 .clase-quimica {
@@ -90,4 +81,51 @@ main {
 .clase-elementos_informatica {
     grid-row: 3;
     grid-column: 4;
+}
+
+.clase {
+    display: none;
+}
+
+/* Clases Selccionadas*/
+
+.imagen_clase {
+    margin: 70px 30px 40px 330px;
+}
+.imagen_clase img {
+    height: 500px;
+    width: 320px;
+    border-radius: 5%;
+}
+.descripcion_clase {
+    margin: 70px 0px 40px 60px;
+    color: var(--gris_claro);
+    font-family: var(--fuente_principal);
+    font-size: 30px;
+}
+.descripcion_clase p {
+    padding: 5px;
+}
+.profe {
+    margin-bottom: 70px;
+}
+.boton {
+    padding: 50px;
+    height: auto;
+    width: auto;
+}
+.boton button {
+    border: 0;
+    text-decoration: none;
+    background-color: var(--navegacion);
+    margin-top: 60px;
+    height: 110px;
+    width: 190px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-family: var(--fuente_principal);
+    color: var(--gris_claro);
+}
+.boton button:hover {
+    cursor: pointer;
 }

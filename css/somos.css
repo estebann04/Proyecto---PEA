@@ -1,27 +1,5 @@
-:root {
-    --principal: rgb(0, 29, 67);
-    --secundario: rgb(124, 169, 202);
-    --navegacion: rgb(33, 79, 118);
-    --footer: rgb(124, 169, 202);
-    --negro: #000;
-    --blanco: #fff;
-    --gris_claro: #ECECEC;
-    --fuente_principal: 'Hanken Grotesk', sans-serif;
-    --fuente_secundaria: 'Questrial', sans-serif;
-}
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: var(--fuente_principal);
-}
-
-body {
-    background-color: var(--principal);
-}
-/**Main**/
-main {
-    display: block;
+.somos {
+    display: none;
 }
 .content {
     display: grid;
