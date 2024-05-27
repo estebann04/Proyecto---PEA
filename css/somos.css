@@ -1,6 +1,15 @@
-.somos {
-    display: none;
+:root {
+    --principal: rgb(0, 29, 67);
+    --secundario: rgb(124, 169, 202);
+    --navegacion: rgb(33, 79, 118);
+    --footer: rgb(124, 169, 202);
+    --negro: #000;
+    --blanco: #fff;
+    --gris_clarito: #ECECEC;
+    --fuente_principal: 'Hanken Grotesk', sans-serif;
+    --fuente_secundaria: 'Questrial', sans-serif;
 }
+
 .content {
     display: grid;
     grid-template-columns: 3fr 3fr;

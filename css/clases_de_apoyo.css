@@ -14,7 +14,6 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 1200px;
 }
 /* Selector de Clases*/
 
@@ -90,7 +89,7 @@ main {
 /* Clases Selccionadas*/
 
 .imagen_clase {
-    margin: 70px 30px 40px 330px;
+    margin: 70px 30px 40px 130px;
 }
 .imagen_clase img {
     height: 500px;
@@ -128,4 +127,11 @@ main {
 }
 .boton button:hover {
     cursor: pointer;
+}
+.seleccionar {
+    display: none;
+    margin-top: 100px;
+}
+.seleccionar img {
+    width: 100px;
 }

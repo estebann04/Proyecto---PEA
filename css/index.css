@@ -1,8 +1,7 @@
 /* Media query para pantallas con ancho menor a 600px */
 @media (max-width: 1120px) {
 }
-
-.index {
+main {
     display: flex;
     height: 405px;
     padding: 45px 30px;

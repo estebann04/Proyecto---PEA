@@ -35,7 +35,6 @@ header {
     grid-template-columns: repeat(2, 1fr);
     height: 200px;
     width: 100%;
-    max-width: 1200px;
     position: relative;
     padding-top: 20px;
     padding-right: 20px;
@@ -115,7 +114,6 @@ nav {
     background-color: var(--navegacion);
     height: 70px;
     width: 100%;
-    max-width: 1200px;
     font-size: 20px;
 }
 ul.menu {
@@ -159,7 +157,6 @@ ul.menu li a {
 main {
     background-color: var(--principal);
     width: 100%;
-    max-width: 1200px;
 }
 
 /* FOOTER */
@@ -169,7 +166,6 @@ footer {
     justify-content: start;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
     height: 160px;
     background-color: var(--footer);
     font-family: var(--fuente_secundaria);
