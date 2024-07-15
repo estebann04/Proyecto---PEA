@@ -1,0 +1,44 @@
+main {
+    color: white;
+    padding-top: 30px;
+}
+
+.titulo {
+    border-radius: 50%;
+    background-color:  rgb(33, 79, 118);
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 100px;
+    max-height: 100px;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.emprendimientos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.emprendimiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.borde {
+    border-radius: 50%;
+    border: 7px solid rgb(33, 79, 118);
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    margin: 0 40px;
+    margin-bottom: 20px;
+    background-color: red;
+}

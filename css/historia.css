@@ -1,0 +1,51 @@
+:root {
+    --principal: rgb(0, 29, 67);
+    --secundario: rgb(124, 169, 202);
+    --navegacion: rgb(33, 79, 118);
+    --footer: rgb(124, 169, 202);
+    --negro: #000;
+    --blanco: #fff;
+    --gris_clarito: #ECECEC;
+    --fuente_principal: 'Hanken Grotesk', sans-serif;
+    --fuente_secundaria: 'Questrial', sans-serif;
+}
+
+.historia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.descripcion {
+    min-width: 500px;
+    max-width: 500px;
+    border-radius: 50%;
+    background-color: var(--navegacion);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+
+.descripcion p{
+    min-width: 400px;
+    max-width: 400px;
+    color: white;
+    font-size: 20px;
+}
+
+.historia img{
+    height: 300px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.separador {
+    width: 100px;
+    height: 100%;
+}

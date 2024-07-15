@@ -1,0 +1,78 @@
+:root {
+    --gris_clarito: #ECECEC;
+    --navegacion: rgb(33, 79, 118);
+    --footer: rgb(124, 169, 202);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 80px;
+    color: var(--gris_clarito);
+}
+
+/* Titulo */
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Formulario */
+
+.formulario {
+    display: none;
+    flex-direction: column;
+}
+
+/* Apuntes */
+
+.instituto {
+    display: flex;
+}
+
+.titulo {
+    max-height: 30px;
+    text-align: center;
+    background-color: rgb(33, 79, 118);
+    border-radius: 50%;
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+.carreras {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.carrera {
+    margin-bottom: 20px;
+}
+
+.carrera a:hover {
+    cursor: pointer;
+    color: var(--navegacion);
+}
+
+.años {
+    display: none;
+    list-style-type: none;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.año {
+    margin: 10px 0;
+}
+
+.materias {
+    display: none;
+    list-style: none;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.materia {
+    margin: 5px 0;
+}
