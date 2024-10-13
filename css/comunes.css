@@ -1,181 +1,107 @@
 :root {
-    --principal: rgb(0, 29, 67);
-    --secundario: rgb(124, 169, 202);
-    --navegacion: rgb(33, 79, 118);
-    --footer: rgb(124, 169, 202);
-    --negro: #000;
-    --blanco: #fff;
-    --gris_claro: #ECECEC;
-    --fuente_principal: 'Hanken Grotesk', sans-serif;
-    --fuente_secundaria: 'Questrial', sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: var(--fuente_principal);
+    --oscuro: #134169;
+    --claro: #325579;
+    --letra: #EDF0DE;
 }
 
 body {
-    background-color: var(--principal);
-    background-color: var(--navegacion);
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
+    margin: 0;
 }
 
-/* HEADER */   
-
 header {
-    background-image: url('/imagenes/fondo_barra2.jpg');
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 200px;
-    width: 100%;
     position: relative;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    top: 0;
-    left: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 170px;
+    background-color: var(--claro);
+    justify-content: center;
+}
+
+#links {
+    display: flex;
+    width: 80%;
+}
+
+#logo_untdf {
+    align-content: end;
+    width: 25%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+#logo_untdf a > img {
+    max-width: 120px;
+}
+
+#borde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--oscuro);
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+#logo_pea {
+    display: flex;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_pea a img {
+    width: 120px;
+}
+
+#iconos {
+    width: 30%;
+    align-content: end;
+    margin-bottom: 30px;
+}
+
+#iconos a img {
+    height: 50px;
+}
+
+nav {
+    position: absolute;
+    top: 140px;
+    width: 80%;
+    border-radius: 20px 20px / 30px 30px;
+    height: 50px;
+    background-color: #134169;
+    margin: 0;
+    display: block;
+    color: var(--letra);
+    align-content: center;
     z-index: 1;
 }
 
-/* Logo PEA y Busqueda*/
-
-.columna1 {
-    display:flex;
-    justify-content: left;
-}
-
-    .logo_pea img {
-        height: 150px;
-        width: auto;
-    }
-
-    .barra_busqueda {
-        position: relative;
-        margin-left: 10px;
-        margin-top: 80px;
-    }
-
-    .barra_busqueda input{
-        padding: 9px 10px 9px 32px;
-        outline: none;
-        font-size: 18px;
-        border-radius: 25px;
-        border: 3px solid var(--negro);
-        background: var(--blanco) url("/imagenes/search-icon.png") no-repeat 9px center;
-        width: 250px;
-    }
-
-    .barra_busqueda input:hover {
-        background-color: var(--gris_claro);
-    }
-
-/*LOGOS UNTDF-SIU-REDES */
-/* La columna 2 se usa sólo para posicionar los iconos a la derecha*/
-.columna2 {
+nav ul {
     display: flex;
-    justify-content: right;
-}
-/*El div logos se usa para centrarlos y darles espacio*/
-.logos {
-    padding-right: 20px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
 }
 
-    /*Posicionamiento de Logos*/
-
-    .logo_untdf, .logo_siuguarani {
-        display: flex;
-        justify-content: center;
-    }
-
-    .Redes {
-        display: flex;
-        justify-content: center;
-    }
-
-    /* Tamaño de Logos */
-    
-    .logo_untdf img, .logo_siuguarani img {
-        height: 60px;
-    }
-
-    .Redes img {
-        height: 40px;
-    }
-
-/* NAV */
-nav {
-    background-color: var(--navegacion);
-    height: 70px;
-    width: 100%;
-    font-size: 20px;
-}
-ul.menu {
+nav ul li {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-}
-.menu li {
-    position: relative;
-    width: 100%;
-}
-.menu li:hover > ul {
-    display: block;
+    font-size: 25px;
 }
 
-ul.menu li a {
-    border: 2px solid var(--blanco);
-    height: 70px;
-    align-content: center;
-    display: block;
-    background-color: var(--navegacion);
-    font-family: var(--fuente_secundaria);
-    font-size: 20px;
-    text-align: center;
-    color: var(--gris_claro);
-    text-decoration: none;
-    padding: 20px 20px;
-}
-.menu li a:hover {
-    background-color: var(--principal);
-}
-.submenu {
-    display: none;
-    position: absolute;
-    list-style-type: none;
-    width: 100%;
+a:hover {
+    cursor: pointer;
+    color: #899be4;
 }
 
-/* MAIN */
-
-main {
-    background-color: var(--principal);
-    width: 100%;
-}
-
-/* FOOTER */
-
-footer {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-    height: 160px;
-    background-color: var(--footer);
-    font-family: var(--fuente_secundaria);
-    font-size: 20px;
-    color: var(--principal);
-}
-.logo_untdf-footer {
-    margin-left: 20px;
-}
-footer img {
-    height: 100px;
-    width: auto;
+.separacion {
+    height: 30px;
+    width: 3px;
+    background-color: var(--letra);
 }

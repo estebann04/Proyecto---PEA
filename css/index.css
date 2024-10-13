@@ -7,6 +7,8 @@ main {
     height: 100%;
     margin: 0;
     padding: 0;
+    z-index: 0;
+    position: relative;
 }
 .noticia {
     margin: 0;

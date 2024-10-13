@@ -10,9 +10,4 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(data => {
         document.querySelector('nav').innerHTML = data;
     });
-    fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-        document.querySelector('footer').innerHTML = data;
-    });
 });
